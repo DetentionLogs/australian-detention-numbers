@@ -187,7 +187,8 @@ tbody th {
   font-weight: bold;
   letter-spacing: 1px;
   width: 9em;
-  background-color: #eee; }
+  background-color: #eee;
+  white-space: nowrap; }
 
 tbody td {
   width: 10em; }
