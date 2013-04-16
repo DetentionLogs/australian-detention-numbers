@@ -1,0 +1,214 @@
+/* apply a natural box layout model to all elements */
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+  background: #fcd700;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #fcd700;
+  color: #fff;
+  text-shadow: none; }
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #fcd700; }
+
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder {
+  color: #a9a9a9; }
+
+textarea:-moz-placeholder {
+  color: #a9a9a9; }
+
+body {
+  margin: 0 auto;
+  padding: 0 1em;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  line-height: 1.6em;
+  color: #444;
+  background-color: #FCFEFB;
+  font-size: 18px; }
+
+/* @group Elements */
+h1, h2, h3, h4 {
+  margin-top: 16px;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem; }
+
+p {
+  margin-top: 16px;
+  margin-top: 1rem; }
+
+a {
+  text-decoration: underline; }
+
+abbr {
+  text-decoration: none;
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  border-bottom: 1px #aaa dashed; }
+
+/* @end Elements */
+/* @group Colours */
+a {
+  color: #288500; }
+
+a:hover,
+a:focus {
+  color: #195200; }
+
+.note {
+  border-color: #f1cb7a;
+  background-color: #fbefd6;
+  color: #111; }
+
+/* @end Colours */
+/* @group Page structure */
+.site-navigation ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0; }
+  .site-navigation ul li {
+    display: inline-block; }
+  .site-navigation ul li + li {
+    padding-left: 1rem; }
+
+.box {
+  padding: 24px 24px 8px;
+  padding: 1.5rem 1.5rem .5rem;
+  border-width: 2px;
+  border-width: 0.125rem;
+  border-style: solid;
+  margin: 1.5rem 0;
+  color: #000; }
+  .box :first-child {
+    padding-top: 0;
+    margin-top: 0; }
+
+/* @end Page structure */
+/* @group Typography */
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  font-size: 2rem;
+  margin-bottom: 1em; }
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding-top: 32px;
+  padding-top: 2rem; }
+
+code {
+  font-family: monospace;
+  background-color: white; }
+
+/* @end Typography */
+/* @group Table */
+table {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: left;
+  padding: 0;
+  margin: 48px 0;
+  margin: 4rem 0;
+  max-width: 90rem; }
+
+caption {
+  font-size: 18px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 1rem; }
+
+.total {
+  border-left: 1px #aaa solid; }
+
+thead {
+  vertical-align: bottom;
+  border-bottom: 1px #eee solid; }
+
+th, td {
+  padding: 0.5rem .5rem 0.75rem;
+  margin: 0; }
+
+tbody th,
+tbody td {
+  vertical-align: top;
+  border-bottom: 1px #bbb solid; }
+
+tbody th {
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 9em;
+  background-color: #eee; }
+
+tbody td {
+  width: 10em; }
+
+.idc :hover,
+tbody tr:hover th,
+tbody tr:hover td {
+  background-color: #fdf6e9; }
+
+/* @end Table */
+/* @group Layout */
+.read {
+  max-width: 40em; }
+
+.site-footer {
+  margin-top: 2rem;
+  border-top: 1px #ccc solid;
+  padding-bottom: 8px 0 32px;
+  padding: .5rem 0 2rem; }
+
+/* @end Layout */
+@media all and (min-width: 100em) {
+  body {
+    margin: 0 auto 0 5%; } }
