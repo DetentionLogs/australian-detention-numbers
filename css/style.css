@@ -160,7 +160,6 @@ tbody th {
 tbody td {
   width: 10em; }
 
-.idc :hover,
 tbody tr:hover th,
 tbody tr:hover td {
   background-color: #fdf6e9; }

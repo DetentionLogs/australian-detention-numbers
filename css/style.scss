@@ -20,17 +20,13 @@ h1,h2,h3, h4 {
 	font-size: 16px;
 	font-size: 1rem;
 }
-
 p {
 	margin-top: 16px;
 	margin-top: 1rem;
 }
-
-
 a {
 	text-decoration: underline;
 }
-
 abbr {
 	text-decoration: none;
     letter-spacing: 1px;
@@ -38,7 +34,6 @@ abbr {
     text-transform: uppercase;
 	border-bottom: 1px #aaa dashed;
 }
-
 /* @end Elements */
 
 /* @group Colours */
@@ -74,8 +69,7 @@ a:focus {
 	}
 	li + li {
 		padding-left: 1rem;
-	}
-	
+	}	
 }
 
 .box {
@@ -104,7 +98,6 @@ h1 {
 	margin-bottom: 1em;
 	line-height: 1.4;
 }
-
 h2 {
 	font-weight: bold;
 	font-size: 24px;
@@ -112,7 +105,6 @@ h2 {
 	padding-top: 32px;
 	padding-top: 2rem;
 }
-
 code {
 	font-family: monospace;
 	background-color: lighten($note, 50%);
@@ -131,7 +123,6 @@ table {
 	margin: 4rem 0;
 	max-width: 90rem;
 }
-
 caption {
 	font-size: 18px;
 	font-size: 1.4rem;
@@ -139,32 +130,24 @@ caption {
 	text-align: left;
 	padding-bottom: 1rem;
 }
-
 .date {
 }
 .total {
 	border-left: 1px #aaa solid;
 }
-
 thead {
 	vertical-align: bottom;
 	border-bottom: 1px #eee solid;
 }
-
-th.table-body-label {
-}
-
 th, td {
 	padding: 0.5rem .5rem 0.75rem;
 	margin: 0;
 }
-
 tbody th,
 tbody td {
 	vertical-align: top;
 	border-bottom: 1px #bbb solid;
 }
-
 tbody th {
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -175,8 +158,6 @@ tbody th {
 tbody td {
 	width: 10em;
 }
-
-.idc :hover,
 tbody tr:hover th,
 tbody tr:hover td {
 	background-color: lighten($note, 24%) ;
