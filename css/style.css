@@ -56,7 +56,8 @@ abbr {
   letter-spacing: 1px;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  border-bottom: 1px #aaa dashed; }
+  border-bottom: 1px #aaa dashed;
+  cursor: help; }
 
 /* @end Elements */
 /* @group Colours */
