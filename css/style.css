@@ -114,6 +114,12 @@ a:focus {
   .site-navigation ul li + li {
     padding-left: 1rem; }
 
+.toc {
+  list-style: disc; }
+
+.toc ol {
+  list-style: circle; }
+
 .box {
   padding: 24px 24px 8px;
   padding: 1.5rem 1.5rem .5rem;
