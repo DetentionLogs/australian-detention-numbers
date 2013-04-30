@@ -10,6 +10,40 @@ body {
 	font-size: 18px;
 }
 
+/* @group Font Families */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
+.wf-active body {
+	font-family: 'Open Sans', Verdana, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+/* @end Font Families */
+
 /* @group Elements */
 
 h1,h2,h3, h4 {
@@ -99,12 +133,20 @@ h1 {
 	margin-bottom: 1em;
 	line-height: 1.4;
 }
-h2 {
+h2,
+caption h3 {
 	font-weight: bold;
 	font-size: 24px;
 	font-size: 1.5rem;
 	padding-top: 32px;
 	padding-top: 2rem;
+}
+
+h3 {
+	padding-top: 24px;
+	padding-top: 1.5rem;
+	font-weight: bold;
+	font-size: 1em;
 }
 code {
 	font-family: monospace;
@@ -122,16 +164,22 @@ table {
 	padding: 0;
 	margin: 48px 0;
 	margin: 4rem 0;
-	max-width: 90rem;
+ 	max-width: 90rem;
+}
+table.detailed {
+ 	max-width: 70em;
 }
 caption {
-	font-size: 18px;
-	font-size: 1.4rem;
-	font-weight: bold;
 	text-align: left;
 	padding-bottom: 1rem;
 }
-.date {
+.sup-header th {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+.sub-total {
+	background-color: #f4f4f4;
+	width: 10rem;
 }
 .total {
 	border-left: 1px #aaa solid;
@@ -165,6 +213,39 @@ tbody tr:hover td {
 }
 
 /* @end Table */
+
+/* @group Icons */
+
+a.document {
+	background: url(doc-small.png) no-repeat left center;
+	padding-left: 1.5rem;
+}
+
+.contact {
+	.email {
+		background: url(email-small.png) no-repeat left center;
+		background-size: 21%;
+		padding-left: 1.5rem;
+		text-decoration: none;
+		.no-backgroundSize & {
+			background: none;
+			text-decoration: underline;
+			padding-left: none;
+		}
+	}
+	.twitter {
+		background: url(twitter-small.png) no-repeat left bottom;
+		background-size: 13%;
+		padding-left: 1.5rem;
+		text-decoration: none;
+		.no-backgroundSize & {
+			background: none;
+			text-decoration: underline;
+			padding-left: none;
+		}
+	}
+}
+ /* @end Icons */
 
 /* @group Layout */
 
